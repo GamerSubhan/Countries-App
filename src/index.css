@@ -1,0 +1,177 @@
+:root {
+  --dark-bg-color: hsl(207, 26%, 17%);
+  --article-color: hsl(209, 23%, 22%);
+  --text-color: hsl(0, 0%, 100%);
+  --light-mode-text: hsl(200, 15%, 8%);
+  --light-mode-input: hsl(0, 0%, 52%);
+  --light-mode-background: hsl(0, 0%, 98%);
+}
+
+body
+{
+  font-family: "Nunito Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color:  hsl(0, 0%, 97%);
+}
+
+#countryList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px; 
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: start;
+    margin-top: 5vh;
+    margin-left: 3vw;
+  }
+
+  .country-name{
+    flex: 1 0 -5%;
+    list-style: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  .country-name h3
+  {
+    margin-left: 1vw;
+  }
+  
+  .country-name p
+  {
+    margin-left: 1vw;
+  }
+
+  .header
+  {
+    background-color: white;
+    height: 7vh;
+    margin-top: 0vh;
+  }
+
+  #title
+  {
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 5vw;
+  }
+
+  #searchInput
+  {
+    height: 7vh;
+    width: 25vw;
+    border-radius: 6px;
+    border-color: transparent;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    text-indent: 3vw;
+  }
+
+  #searchInput:hover
+  {
+    cursor: pointer;
+  }
+
+  #Lighting 
+  {
+    position: relative;
+    float: right;
+    margin-right: 5vw;
+  }
+
+  #Lighting:hover
+  {
+    cursor: pointer;
+  }
+
+  .moon-icon {
+    color: black;
+    padding: 10px;
+    position: absolute;
+    margin-top: -6vh;
+    margin-left: -2.5vw;
+  }
+
+  .filterSection
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #select
+  {
+    border-color: transparent;
+    height: 6vh;
+    width: 10vw;
+    margin-top: 10vh;
+    margin-right: 5vw;
+    text-indent: 1vw;
+    border-radius: 4px;
+  }
+
+  #select:focus
+  {
+    outline: none;
+    border-color: transparent;
+  }
+
+  #select option
+  {
+    border-color: transparent;
+  }
+
+  .customerPlaceholder::placeholder
+  {
+    color: white;
+  }
+
+  #countryCanvas
+  {
+    display: none;
+  }
+
+  .btn
+  {
+    margin-left: 1vw;
+    top: -15vh;
+    color: black;
+  }
+
+  body.light-theme {
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+  }
+  
+  /* Overvall padding */
+  .header,
+  .form,
+  .countries {
+    padding: 10px 50px;
+  }
+  
+  /* Loading */
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .header.light-theme {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .form input.light-theme,
+  .form select.light-theme {
+    background-color: var(--light-mode-input);
+  }
+
+  .country-name.light-theme {
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+  }
